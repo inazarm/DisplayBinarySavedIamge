@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CAPSModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tblStudent">
+    <Key>
+      <PropertyRef Name="RegistrationNo" />
+    </Key>
+    <Property Name="SNo" Type="int" Nullable="false" />
+    <Property Name="RegistrationNo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RegistrationCode" Type="varchar" MaxLength="50" />
+    <Property Name="Date" Type="datetime" />
+    <Property Name="Campus" Type="varchar" MaxLength="50" />
+    <Property Name="SectionCode" Type="varchar" MaxLength="50" />
+    <Property Name="CourseName" Type="varchar" MaxLength="50" />
+    <Property Name="Program" Type="varchar" MaxLength="50" />
+    <Property Name="Name" Type="varchar" MaxLength="50" />
+    <Property Name="Father_Husband_Name" Type="varchar" MaxLength="50" />
+    <Property Name="DOB" Type="datetime" />
+    <Property Name="CNIC" Type="varchar" MaxLength="100" />
+    <Property Name="Gender" Type="varchar" MaxLength="50" />
+    <Property Name="MaritalStatus" Type="varchar" MaxLength="50" />
+    <Property Name="Picture" Type="varbinary(max)" />
+    <Property Name="NoOfSibBro" Type="varchar" MaxLength="50" />
+    <Property Name="NoOfSibSis" Type="varchar" MaxLength="50" />
+    <Property Name="Nationality" Type="varchar" MaxLength="50" />
+    <Property Name="PlaceOfBirth" Type="varchar" MaxLength="50" />
+    <Property Name="CurrentResAddress" Type="varchar(max)" />
+    <Property Name="PTCLNo" Type="varchar" MaxLength="50" />
+    <Property Name="CellNo1" Type="varchar" MaxLength="50" />
+    <Property Name="CellNo2" Type="varchar" MaxLength="50" />
+    <Property Name="Email" Type="varchar" MaxLength="50" />
+    <Property Name="OfficeAddress" Type="varchar(max)" />
+    <Property Name="PABX" Type="varchar" MaxLength="50" />
+    <Property Name="Ext" Type="varchar" MaxLength="50" />
+    <Property Name="Tel_Dir" Type="varchar" MaxLength="50" />
+    <Property Name="RecStatus" Type="varchar" MaxLength="10" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityContainer Name="CAPSModelStoreContainer">
+    <EntitySet Name="tblStudent" EntityType="Self.tblStudent" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

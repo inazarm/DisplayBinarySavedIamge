@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CAPSModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="tblStudent">
+    <Key>
+      <PropertyRef Name="RegistrationNo" />
+    </Key>
+    <Property Name="SNo" Type="Int32" Nullable="false" />
+    <Property Name="RegistrationNo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RegistrationCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Date" Type="DateTime" Precision="3" />
+    <Property Name="Campus" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SectionCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CourseName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Program" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Father_Husband_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DOB" Type="DateTime" Precision="3" />
+    <Property Name="CNIC" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Gender" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="MaritalStatus" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Picture" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="NoOfSibBro" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="NoOfSibSis" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Nationality" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PlaceOfBirth" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CurrentResAddress" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="PTCLNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CellNo1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CellNo2" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="OfficeAddress" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="PABX" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Ext" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Tel_Dir" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="RecStatus" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="CAPSEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tblStudents" EntityType="Self.tblStudent" />
+  </EntityContainer>
+</Schema>
