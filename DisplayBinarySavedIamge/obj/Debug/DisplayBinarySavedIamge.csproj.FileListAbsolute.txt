@@ -80,3 +80,4 @@ D:\Projects\DisplayBinarySavedIamge\DisplayBinarySavedIamge\obj\Debug\DisplayBin
 D:\Projects\DisplayBinarySavedIamge\DisplayBinarySavedIamge\obj\Debug\DisplayBinarySavedIamge.csproj.CopyComplete
 D:\Projects\DisplayBinarySavedIamge\DisplayBinarySavedIamge\obj\Debug\DisplayBinarySavedIamge.dll
 D:\Projects\DisplayBinarySavedIamge\DisplayBinarySavedIamge\obj\Debug\DisplayBinarySavedIamge.pdb
+D:\Projects\DisplayBinarySavedIamge\DisplayBinarySavedIamge\obj\Debug\DisplayBinarySavedIamge.csprojAssemblyReference.cache
